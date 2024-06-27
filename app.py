@@ -4,7 +4,7 @@ import asyncio
 import json
 import pandas as pd
 
-page_count = 416
+page_count = 3
 url_list = [f'https://www.carwale.com/used/all-used-cars/page-{page}/'for page in range(2,page_count)]
 
 
