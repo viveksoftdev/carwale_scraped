@@ -5,7 +5,7 @@ import aiohttp
 
 async def fetch_page(url,headers):
     #establishing the session
-    async with aiohttp.ClientSession as session:
+    async with aiohttp.ClientSession() as session:
         async with session.get(url,headers=headers) as response:
             return await response.text()
 
